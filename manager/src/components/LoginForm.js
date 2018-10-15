@@ -29,7 +29,7 @@ class LoginForm extends Component {
           </Text>
         </View>
       );
-    };
+    }
   }
 
   renderButton() {
