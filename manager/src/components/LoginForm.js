@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 
 import { Card, CardSection, Input, Button, Spinner } from './common';
-import * as authActions from './../actions';
+import { emailChanged, passwordChanged, loginUser } from './../actions';
 
 class LoginForm extends Component {
   onEmailChange(text) {
@@ -92,4 +92,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, authActions)(LoginForm);
+export default connect(mapStateToProps, { emailChanged, passwordChanged, loginUser })(LoginForm);
